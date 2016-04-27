@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AngularJS emails editor</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="emails-editor\emails-editor.css">
+</head>
+
+<body ng-app="MyApp">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="index.js"></script>
+    <script src="emails-editor\emails-editor-controller.js"></script>
+    <script src="emails-editor\emails-editor.js"></script>
+
+    <div class="main-container" ng-controller="MainController as ctrl">
+        <label>
+            Set name of dashboard: 
+            <input type="text" name="name" ng-model="dashName" required>
+        </label>
+        <div class="emails-block">
+            <emails-editor emails="mails" board-title="dashName">
+            </emails-editor>
+        </div>
+        <div class="button-block">
+            <button class="custom-button" ng-click="ctrl.addMail($event)">Add email</button>
+            <button class="custom-button" ng-click="ctrl.getCount($event)">Get emails count</button>
+        </div>
+    </div>
+</body>
+
+</html>

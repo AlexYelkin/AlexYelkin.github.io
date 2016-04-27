@@ -1,0 +1,65 @@
+.emails-editor {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    background-color: #F5F5F5;
+    font-family: "Myriad Pro";
+}
+
+.emails-editor > p {
+    padding-top: 33px;
+    padding-left: 40px;
+    margin: 0;
+    font-size: 19px;
+    letter-spacing: .3px;
+}
+
+.emails-editor-container {
+    position: absolute;
+    top: 90px;
+    bottom: 30px;
+    left: 40px;
+    right: 40px;
+    border: 1px solid lightgray;
+    background-color: #FFF;
+    font-size: 14px;
+    overflow: auto;
+}
+
+.emails-editor-mail-block {
+    background-color: #D9E8FF;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 4px 5px 3px 8px;
+    margin: 7px 8px;
+}
+
+.emails-editor-mail{
+    margin-right: 2px;
+}
+
+.emails-editor-mail-input, .emails-editor-mail-input :active {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.emails-editor-mail-invalid {
+    border-bottom: 1px solid red ;
+}
+
+.emails-editor-mail-close-container {
+    width: 12px; 
+    height: 12px; 
+    display: inline-block; 
+    vertical-align: top;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.close-x {
+    stroke: black;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 5;
+}
