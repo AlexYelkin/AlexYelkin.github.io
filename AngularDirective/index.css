@@ -1,0 +1,39 @@
+@font-face { font-family: "Myriad Pro"; src: url("MyriadPro-Regular.otf"); } 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.main-container {
+    width: 500px; 
+    height: 320px;
+}
+
+.emails-block {
+    width:100%; 
+    height: 220px; 
+    position: relative;
+}
+
+.button-block {
+    margin: 21px 0 0 30px;
+}
+
+.custom-button {
+    background-color: #6699FF;
+    min-width: 100px;
+    padding: 8px 11px;
+    border-radius: 3px;
+    border: 0px;
+    color: #FFF;
+    margin: 9px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: .3px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS emails editor</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="emails-editor\emails-editor.css">
+</head>
+
+<body ng-app="MyApp">
+    <script src="angular.js"></script>
+    <script src="index.js"></script>
+    <script src="emails-editor\emails-editor.js"></script>
+
+    <div class="main-container" ng-controller="MainController as ctrl">
+        <div class="emails-block">
+            <emails-editor emails="mails" board-title="dashboardName">
+            </emails-editor>
+        </div>
+        <div class="button-block">
+            <button class="custom-button" ng-click="ctrl.addMail($event)">Add email</button>
+            <button class="custom-button" ng-click="ctrl.getCount($event)">Get emails count</button>
+        </div>
+    </div>
+</body>
+
+</html>

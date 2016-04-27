@@ -1,0 +1,15 @@
+<div class="emails-editor">
+    <p>{{ title }}</p>
+    <div class="emails-editor-container">
+        <div ng-repeat="mail in editorCtrl.emails" class="emails-editor-mail-block">
+            <span class="emails-editor-mail" ng-class="{ 'emails-editor-mail-invalid': !mail.isValid }">{{ mail.val }}</span>
+            <div class="emails-editor-mail-close-container" ng-click="editorCtrl.remove(mail, $event);">
+                <svg viewbox="0 0 40 40">
+                <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+            </svg>
+            </div>
+        </div>
+        <input type="text" placeholder="add more people ..." class="emails-editor-mail-input" ng-keydown="editorCtrl.onKeyDown($event);"
+            ng-blur="editorCtrl.onBlur($event);" ng-paste="editorCtrl.onPaste($event);" />
+    </div>
+</div>
